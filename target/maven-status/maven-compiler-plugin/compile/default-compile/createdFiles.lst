@@ -1,0 +1,5 @@
+com\mycompany\servlets\RemoveActivityServlet.class
+com\mycompany\servlets\AddActivityServlet.class
+com\mycompany\bigtarefas\resources\JakartaEE10Resource.class
+com\mycompany\models\Activity.class
+com\mycompany\bigtarefas\JakartaRestConfiguration.class
