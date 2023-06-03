@@ -3,9 +3,35 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
    version="6.0">
+    
     <session-config>
         <session-timeout>
-            30
+            60
         </session-timeout>
     </session-config>
+
+    <!-- Outras configurações do web.xml -->
+
+    <servlet>
+        <servlet-name>AddActivityServlet</servlet-name>
+        <servlet-class>com.mycompany.AddActivityServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddActivityServlet</servlet-name>
+        <url-pattern>/addActivityServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteActivityServlet</servlet-name>
+        <servlet-class>com.mycompany.DeleteActivityServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteActivityServlet</servlet-name>
+        <url-pattern>/deleteActivityServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Outras configurações do web.xml -->
+
 </web-app>
